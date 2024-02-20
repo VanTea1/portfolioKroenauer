@@ -13,12 +13,14 @@ export class HeaderComponent {
   isHome$ = this.headerService.isHome();
 
   navItems = [
-    { title: 'Über mich', homePath: '/', fragment: 'about', pagePath: '/ueber' },
-    { title: 'Meine Projekte', homePath: '/', fragment: 'projects', pagePath: '/projekte' },
+    { title: 'Über mich', homePath: '/', fragment: 'about', pagePath: '/about' },
+    { title: 'Meine Projekte', homePath: '/', fragment: 'projects', pagePath: '/projects' },
   ]
 
   constructor(private bioService: BioService, private headerService: HeaderService) { }
+  logRouterLinkValues(item: any) {
+    console.log('homePath:', item.homePath);
+    console.log('pagePath:', item.pagePath);
 
-
-
+}
 }
