@@ -2,7 +2,7 @@
     {
         "name": "Budget Calculator",
         "stack": {
-            "name": "Angular.js",
+            "name": "Angular",
             "iconClasses": "fab fa-angular"
         },
         "description": "Budget Rechner mit simplen Funktionen wie dem Hinzufügen, Entfernen und Bearbeiten von Budget-Karten",
@@ -13,7 +13,7 @@
     {
         "name": "Kanban",
         "stack": {
-            "name": "Angular.js",
+            "name": "Angular",
             "iconClasses": "fab fa-angular"
         },
         "description": "Einfaches Taskmanagement im Stil eines Kanban-Boards mit Drag&Drop für die Tasks im Board",
@@ -24,7 +24,7 @@
     {
         "name": "Quiz-App",
         "stack": {
-            "name": "Angular.js",
+            "name": "Angular",
             "iconClasses": "fab fa-angular"
         },
         "description": "Web-basiertes Mehrspieler-Quiz als Client-Server-Anwendung inklusive User-Verwaltung",
@@ -35,7 +35,7 @@
     {
         "name": "ToDo List",
         "stack": {
-            "name": "Angular.js",
+            "name": "Angular",
             "iconClasses": "fab fa-angular"
         },
         "description": "Single-Page-Application mit der Möglichkeit Aufgaben hinzuzufügen, zu entfernen und fertigzustellen",
@@ -46,7 +46,7 @@
     {
         "name": "TicTacToe",
         "stack": {
-            "name": "Angular.js",
+            "name": "Angular",
             "iconClasses": "fab fa-angular"
         },
         "description": "Single-Page-Application mit abwechselnder Interaktion zweier Spieler. ",
