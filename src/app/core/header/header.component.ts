@@ -18,9 +18,4 @@ export class HeaderComponent {
   ]
 
   constructor(private bioService: BioService, private headerService: HeaderService) { }
-  logRouterLinkValues(item: any) {
-    console.log('homePath:', item.homePath);
-    console.log('pagePath:', item.pagePath);
-
-}
 }
