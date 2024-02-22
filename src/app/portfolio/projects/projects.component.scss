@@ -5,6 +5,7 @@
 .project-card {
     width: 290px;
     height: 250px;
+    
 }
 
 .project-title {
@@ -18,3 +19,9 @@
     padding-bottom: 170px !important;
 }
 
+.buttons{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
