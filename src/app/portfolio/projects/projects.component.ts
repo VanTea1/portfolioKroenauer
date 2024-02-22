@@ -4,6 +4,7 @@ import { HeaderService } from '../../core/services/header.service';
 import { ProjectsService } from '../../core/services/projects.service';
 import { Observable } from 'rxjs';
 import { Project } from 'src/app/core/models/projects';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -18,9 +19,15 @@ export class ProjectsComponent {
     { viewClasses: 'd-none d-md-flex', displayInColumn: false, useSmallerHeadings: false, titleClasses: 'display-3' },
   ];
 
-  constructor(private projectsService: ProjectsService) { }
+  constructor(private projectsService: ProjectsService, public router: Router) { }
 
   ngOnInit() {
     this.projects$ = this.projectsService.getProjects();
+
+  }
+
+
+  get isProjectsTab(): boolean {
+    return this.router.url === '/projects';
   }
 }

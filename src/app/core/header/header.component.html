@@ -5,7 +5,6 @@
     </div>
     <div class="d-none d-md-flex flex-grow-1 justify-content-end align-items-start headerButtons">
         <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold"
-            *ngFor="let item of navItems" [routerLink]="(isHome$ | async) ? item.homePath : item.pagePath"
-            [fragment]="(isHome$ | async) ? item.fragment : ''">{{item.title}}</button>
+            *ngFor="let item of navItems" [routerLink]="item.pagePath">{{item.title}}</button>
     </div>
 </div>

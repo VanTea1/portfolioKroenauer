@@ -10,7 +10,6 @@ import { HeaderService } from '../services/header.service';
 export class HeaderComponent {
 
   bio$ = this.bioService.getBio();
-  isHome$ = this.headerService.isHome();
 
   navItems = [
     { title: 'Über mich', homePath: '/', fragment: 'about', pagePath: '/about' },

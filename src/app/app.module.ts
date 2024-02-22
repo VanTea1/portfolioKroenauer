@@ -17,10 +17,9 @@ import { CoreModule } from './core/core.module';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        HttpClientModule, // Add HttpClientModule
+        HttpClientModule,
         NgbModule,
         CoreModule
-
     ]
 })
 export class AppModule { }
