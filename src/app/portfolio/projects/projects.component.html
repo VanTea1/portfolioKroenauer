@@ -15,12 +15,12 @@
                 <p class="card-text text-left">
                     {{project.description}}
                 </p>
-                <div class="d-flex justify-content-center align-items-center buttons">
-                    <a [href]="project.previewUrl" *ngIf="project.previewUrl" class="btn btn-dark mr-2">
+                <div class="d-flex buttonDiv">
+                    <a [href]="project.previewUrl" *ngIf="project.previewUrl" class="btn btn-dark mr-2 buttons">
                         <i class="fa-lg mr-1 far fa-eye"></i>
                         Vorschau
                     </a>
-                    <a [href]="project.sourceUrl" *ngIf="project.sourceUrl" class="btn btn-dark">
+                    <a [href]="project.sourceUrl" *ngIf="project.sourceUrl" class="btn btn-dark buttons">
                         <i class="fa-lg mr-1 fab fa-github-alt"></i>
                         Quelle
                     </a>

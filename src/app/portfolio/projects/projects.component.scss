@@ -16,12 +16,15 @@
 }
 
 .projectsContainer{
-    padding-bottom: 170px !important;
+    padding-bottom: 30px !important;
 }
 
-.buttons{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 30px;
+.buttonDiv {
+    display: flex;
+    justify-content: center; /* horizontally */
+    margin-top: auto;
+}
+
+.buttons {
+    margin: 5px;
 }
