@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,7 @@ import { HeaderComponent } from './header/header.component';
     NgbModule,
     HttpClientModule
   ],
-  exports: [ HeaderComponent ]
+  exports: [ HeaderComponent, FooterComponent ]
 })
 
 export class CoreModule { }
