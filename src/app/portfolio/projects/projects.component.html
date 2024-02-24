@@ -10,9 +10,9 @@
                 </h5>
                 <h6 class="card-subtitle mb-2 font-weight-lighter text-left">
                     <i [ngClass]="project.stack.iconClasses"></i>
-                    {{project.stack.name}}
+                        {{ formatStackName(project.stack.name) }}
                 </h6>
-                <p class="card-text text-left">
+                <p class="card-text text-left projectDesc">
                     {{project.description}}
                 </p>
                 <div class="d-flex buttonDiv">

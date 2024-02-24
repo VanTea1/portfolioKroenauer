@@ -23,9 +23,11 @@ export class ProjectsComponent {
 
   ngOnInit() {
     this.projects$ = this.projectsService.getProjects();
-
   }
 
+  formatStackName(stack: string[]): string {
+    return stack.join(', ');
+}
 
   get isProjectsTab(): boolean {
     return this.router.url === '/projects';
