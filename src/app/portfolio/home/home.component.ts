@@ -13,7 +13,7 @@ export class HomeComponent {
   bio$: Observable<any> | undefined; 
 
   respOptions = [
-    { viewClasses: 'd-none d-md-flex', headingClass: 'display-3', useSmallerHeadings: false },
+    { viewClasses: 'd-none d-md-flex', headingClass: 'display-3', useSmallerHeadings: true },
   ];
 
   constructor(public bioService: BioService){}

@@ -1,6 +1,6 @@
 <div class="d-flex flex-column justify-content-center align-items-center w-100" *ngIf="bio$ | async as bio">
     <div class="d-flex flex-column min-vh-95 justify-content-center align-items-center w-100">
-        <div *ngFor="let options of respOptions" [ngClass]="options.viewClasses"
+        <div *ngFor="let options of respOptions"
             class="d-flex flex-column justify-content-center align-items-center w-75">
             <h1 [ngClass]="options.headingClass" class="titleIntro text-center">Hallo, 👋! Ich bin <span
                     class="font-weight-bold">{{bio.firstName+' '+bio.lastName}}.</span></h1>
@@ -14,11 +14,8 @@
             <i class="ml-1 fas fa-angle-right"></i>
         </button>
     </div>
+ 
+        <app-about id="about" class="about"></app-about>
+        <app-projects id="projects" class="projects"></app-projects>
 
-    
-    <div class="d-none d-md-block mt-5"></div>
-    <app-about id="about" class="about"></app-about>
-
-    <div class="d-none d-md-block mt-5"></div>
-    <app-projects id="projects" class="projects"></app-projects>
 </div>
