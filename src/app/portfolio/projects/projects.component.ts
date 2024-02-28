@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class ProjectsComponent {
   
-  projects$: Observable<Project[]> | undefined; // Change projects to projects$
+  projects$: Observable<Project[]> | undefined; 
 
   respOptions = [
     { viewClasses: 'd-none d-md-flex', displayInColumn: false, useSmallerHeadings: false, titleClasses: 'display-3' },
