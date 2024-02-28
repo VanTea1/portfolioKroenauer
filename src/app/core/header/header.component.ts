@@ -8,13 +8,13 @@ import { HeaderService } from '../services/header.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
   bio$ = this.bioService.getBio();
+  isHome$ = this.headerService.isHome();
 
-  navItems = [
+  menuItems = [
     { title: 'Über mich', homePath: '/', fragment: 'about', pagePath: '/about' },
     { title: 'Meine Projekte', homePath: '/', fragment: 'projects', pagePath: '/projects' },
-  ]
+  ];
 
   constructor(private bioService: BioService, private headerService: HeaderService) { }
 }
