@@ -17,4 +17,9 @@ export class HeaderComponent {
   ];
 
   constructor(private bioService: BioService, private headerService: HeaderService) { }
+
+
+  openWebsite(url: any):void{
+    window.open(url, '_blank');
+  }
 }
