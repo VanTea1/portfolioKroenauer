@@ -1,14 +1,37 @@
-<div class="d-flex w-100 justify-content-center pt-3 pr-4 pl-4 headerBG">
-    <div class="d-flex justify-content-start headerName" *ngIf="bio$ | async as bio" routerLink="/">
-        <h2 class="font-weight-bold">{{bio.firstName}}</h2>
-        <h2 class="font-weight-light">{{bio.lastName}}</h2>
+<div class="header">
+
+    <div class="inner-header flex">
+        <div class="d-flex w-100 justify-content-center pt-3 pr-4 pl-4 headerBG">
+            <div class="d-flex justify-content-start headerName" *ngIf="bio$ | async as bio" routerLink="/">
+                <h2 class="font-weight-bold">{{bio.firstName}}</h2>
+                <h2 class="font-weight-light">{{bio.lastName}}</h2>
+            </div>
+            <div class="d-none d-md-flex flex-grow-1 justify-content-end align-items-start">
+                <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold"
+                    (click)="openWebsite('https://martini-labs.de/')">
+                    Martini Labs
+                </button>
+                <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold"
+                    *ngFor="let item of menuItems" [routerLink]="(isHome$ | async) ? item.homePath : item.pagePath"
+                    [fragment]="(isHome$ | async) ? item.fragment : ''">{{item.title}}</button>
+            </div>
+        </div>
     </div>
-    <div class="d-none d-md-flex flex-grow-1 justify-content-end align-items-start">
-        <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold" (click)="openWebsite('https://martini-labs.de/')">
-            Martini Labs
-        </button>
-        <button type="button" class="ml-2 mr-2 btn btn-outline-dark border-0 font-weight-bold"
-            *ngFor="let item of menuItems" [routerLink]="(isHome$ | async) ? item.homePath : item.pagePath"
-            [fragment]="(isHome$ | async) ? item.fragment : ''">{{item.title}}</button>
+
+    <div>
+        <svg class="waves"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use href="#wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use href="#wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use href="#wave" x="48" y="5" fill="rgba(255,255,255,0.2)" />
+
+            </g>
+        </svg>
     </div>
+
+
 </div>
